@@ -1,0 +1,61 @@
+{
+"God's Plan": {
+    "album": {
+      "name": "Scorpion",
+      "type": "album"
+    },
+    "artists": [
+      {
+        "name": "Drake",
+        "type": "artist"
+      }
+    ],
+    "id": 1,
+    "name": "God's Plan"
+  },
+
+"rockstar": {
+    "album": {
+        "name": "beerbongs & bentleys",
+        "type": "album"
+    },
+    "artists": [
+        {
+        "name": "Post Malone",
+        "type": "artist"
+        }
+    ],
+    "id": 2,
+    "name": "rockstar"
+    },
+
+"Strangers": {
+"album": {
+    "name": "Sucker Punch",
+    "type": "album"
+},
+"artists": [
+    {
+    "name": "Sigrid",
+    "type": "artist"
+    }
+],
+"id": 3,
+"name": "Strangers"
+},
+
+"1950": {
+    "album": {
+        "name": "1950",
+        "type": "album"
+    },
+    "artists": [
+        {
+        "name": "King Princess",
+        "type": "artist"
+        }
+    ],
+    "id": 4,
+    "name": "1950"
+    }
+ }
