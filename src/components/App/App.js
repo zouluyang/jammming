@@ -47,13 +47,12 @@ function App() {
     }
   ]);
 
-  const addTrack = track => {
+  const addTrack = (track) => {
     if (playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
       return;
     } 
     
-    playlistTracks.push(track);
-    setPlaylistTracks(playlistTracks)
+    setPlaylistTracks([...playlistTracks, track])
   }
 
   return (

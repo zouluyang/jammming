@@ -1,28 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Track.css';
 
-function Track(props) {
-
-
-    
+function Track({ onAdd, track }) {
   const renderAction = () => {
 
-    if (props.isRemoval) {
-      return <button className="Track-action">-</button>
+    if (track.isRemoval) {
+      return <button className="Track-action">-</button>;
     }
-    return <button className="Track-action">+</button>
+    return (
+      <button
+        className="Track-action"
+        onClick={() => addTrack(track)}
+      >+</button>
+    );
+  };
 
-  }
-
-  const addTrack = () => {
-    props.onAdd(props.track);
+  const addTrack = (track) => {
+    if (onAdd) {
+      console.log(track);
+      onAdd(track);
+    }
   }
 
   return (
     <div className="Track">
       <div className="Track-information">
-        <h3>{props.track.name}</h3>
-        <p>{props.track.artist} | {props.track.album}</p>
+        <h3>{track.name}</h3>
+        <p>{track.artist} | {track.album}</p>
       </div>
       {renderAction()}
     </div>
@@ -30,3 +34,4 @@ function Track(props) {
 }
 
 export default Track;
+
